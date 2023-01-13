@@ -32,7 +32,7 @@ class userControllers extends Controller
         $finger_id = $request->finger_id;
         
        if(Users::register($first_name, $last_name, $phone, $address, $finger_id)):
-        return json_encode(['suuccess' => true, 'message'=> $first_name . ' ' . $last_name . ' Successfully registered']);
+        echo json_encode(['suuccess' => true, 'message'=> $first_name . ' ' . $last_name . ' Successfully registered']);
        endif;
 
     }

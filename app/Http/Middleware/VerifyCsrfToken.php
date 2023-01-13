@@ -13,7 +13,8 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
 
-        'http://127.0.0.1:8000/clocking/register'
+        'http://127.0.0.1:8000/clocking/register',
+        'https://kbm.pop.peneh.com/clocking/register'
         //
     ];
 }
